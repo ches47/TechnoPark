@@ -3,3 +3,20 @@
 @import '_fonts';
 @import '_buttons';
 
+
+.test {
+    font-family: $fontRoboto;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: yellow;
+    width: 300px;
+    height: 40px;
+}
+
+.w-170 {
+    width: $w-170;
+    height: $h-24;
+    border-radius: $border-radius;
+    border: $border-green;
+    cursor: pointer;
+}
