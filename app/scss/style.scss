@@ -5,63 +5,6 @@
 @import '_inputs';
 @import '_checkbox';
 
-/* Check check__box */
-.check {
-    padding-left: 1.3em;
-}
-
-.check__input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-}
-
-.check__box {
-    position: absolute;
-    margin-top: 0.5em;
-    margin-left: -1.1em;
-    width: $w-22;
-    height: $w-22;
-    overflow: hidden;
-    border-radius: 0.05em;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    box-shadow: 0 0 0 0.1em $green;
-}
-
-/* Checked */
-.check__input:checked + .check__box {
-    background-color: $green;
-    background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
-}
-
-/* Focused */
-.check__input:focus + .check__box {
-    box-shadow:
-        0 0 0 0.1em $green,
-        0 0 0 0.2em $light-green;
-}
-/* Disabled */
-.check__input:disabled + .check__box {
-    box-shadow: 0 0 0 0.1em #9B9B9B;
-}
-
-.check__input:checked:disabled + .check__box {
-    background-color: #9B9B9B;
-}
-/*END Disabled AND CHECKBOX */
-
-.title__on-page {
-    font-family: $fontRoboto;
-    font-size: 34px;
-    font-weight: 500;
-    color: $orange;
-    padding: 20px 0 20px 20px;
-}
-
 .w-65 {
     width: $w-65;
     height: $h-30;
@@ -168,3 +111,79 @@
     padding-left: $padding__left-11px;
     padding-right: $padding__left-11px;
 }
+
+.title__on-page {
+    font-family: $fontRoboto;
+    font-size: 34px;
+    font-weight: 500;
+    color: $orange;
+    padding: 20px 0 20px 20px;
+}
+
+
+// btn
+.button__main {
+    width: $w-107;
+    height: $h-24;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: $border-radius;
+    border: $border-green__1px;
+    background-color: #fff;
+}
+
+.button__main:hover {
+    background-color: $green;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*START Disabled AND CHECKBOX */
+.check {
+    padding-left: 1.3em;
+}
+
+.check__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.check__box {
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left: -1.1em;
+    width: $w-22;
+    height: $w-22;
+    overflow: hidden;
+    border-radius: 0.05em;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0 0 0 0.1em $green;
+}
+
+/* Checked */
+.check__input:checked + .check__box {
+    background-color: $green;
+    background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
+}
+
+/* Focused */
+.check__input:focus + .check__box {
+    box-shadow:
+        0 0 0 0.1em $green,
+        0 0 0 0.2em $light-green;
+}
+/* Disabled */
+.check__input:disabled + .check__box {
+    box-shadow: 0 0 0 0.1em #9B9B9B;
+}
+
+.check__input:checked:disabled + .check__box {
+    background-color: #9B9B9B;
+}
+/*END Disabled AND CHECKBOX */
