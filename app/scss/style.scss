@@ -2,6 +2,7 @@
 @import '_global';
 @import '_fonts';
 @import '_buttons';
+@import '_inputs';
 
 
 .test {
@@ -19,4 +20,13 @@
     border-radius: $border-radius;
     border: $border-green;
     cursor: pointer;
+}
+
+.w-360 {
+    width: $w-360;
+    height: $h-24;
+    border: $border-green__1px;
+    border-radius: $border-radius;
+    padding-left: $padding__left-10px;
+    padding-right: $padding__left-10px;
 }
