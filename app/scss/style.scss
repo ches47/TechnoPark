@@ -412,6 +412,46 @@
         }
     }
 }
+// index-main end
+.index-sms__btn{
+    button{
+        padding: 5px 65px;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: $border-radius;
+        border: $border-green__1px;
+        background-color: #fff;
+        &:hover{
+            background-color: $green;
+            color: #fff;
+            transition: 0.5s;
+        }
+    }
+}
+.index-registr__btn{
+    button{
+        padding: 5px 26px;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: $border-radius;
+        border: $border-green__1px;
+        background-color: #fff;
+        &:hover{
+            background-color: $green;
+            color: #fff;
+            transition: 0.5s;
+        }
+    }
+}
+// index-register start
+    .index-registr__input{
+        display: block;
+    }
+    .checkbox__inner-register{
+        li{
+            display: inline-block;
+        }
+    }
 
 .main__block {
     &-h3 {
