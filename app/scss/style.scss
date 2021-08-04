@@ -280,3 +280,62 @@
         text-decoration: underline;
     }
 }
+//  index-main start
+    .index-main{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+    .index-main__inner{
+        text-align: center;
+        padding-top: 95px;
+    }
+    .index__title{
+        font-size: 24px;
+        margin-top: 38px;
+        color: $green;
+    }
+    .enter{
+        margin-top: 39px;
+        font-size: 24px;
+    }
+    .index__list{
+        margin-bottom: 28px;
+        li{
+            display: inline-block;
+            color: $gray;
+            & + li{
+                margin-left: 73px;
+            }
+        }
+        .index__list-active{
+            color: $green;
+            border-bottom: 2px $green solid;
+            
+        }
+    }
+    .index-main__input{
+        margin-bottom: 35px;
+    }
+    .index-main__btn{
+        margin-bottom: 38px;
+        button{
+            padding: 5px 35px;
+            cursor: pointer;
+            font-weight: 500;
+            border-radius: $border-radius;
+            border: $border-green__1px;
+            background-color: #fff;
+            &:hover{
+                background-color: $green;
+                color: #fff;
+                transition: 0.5s;
+            }
+        }
+    }
+    .account__link{
+        font-size: 12px;
+        color: $green;
+        text-decoration: underline;
+    }
