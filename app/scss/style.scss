@@ -218,7 +218,11 @@
     &-form {
         padding-top: 1px;
         width: 400px;
-        border-bottom: 1px solid #BBBBBB;
+        // border-bottom: 1px solid #BBBBBB;
+        input[type=text] {
+            border: none;
+            border-bottom: 1px solid #54aa8c;;
+        }
         input {
             color: #54aa8c;
             height: 25px;
