@@ -303,14 +303,18 @@
     .index__list{
         margin-bottom: 28px;
         li{
+            a{
+                color: $gray;
+            }
             display: inline-block;
-            color: $gray;
             & + li{
                 margin-left: 73px;
             }
         }
         .index__list-active{
-            color: $green;
+            a{
+                color: $green;
+            }
             border-bottom: 2px $green solid;
             
         }
