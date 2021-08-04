@@ -356,7 +356,17 @@
             border-right: 1px solid #BBBBBB;
             .main__list {
                 li {
-                    padding-bottom: 47px;
+                    padding-bottom: 21px;
+                    .main__list-a {
+                        padding-top: 4px;
+                        width: 344px;
+                        height: 62px;
+                        padding-left: 15px;
+                        &:hover {
+                            background-color: $light-gray;
+                            border-radius: 15px;
+                        }
+                    }
                     span {
                         font-size: 18px;
                         color: #000;
@@ -365,6 +375,34 @@
                     }
                     img {
                         padding-top: 10px;
+                    }
+                    
+                }
+                .list__request {
+                    position: relative;
+                    li {
+                        padding-left: 80px;
+                        color: black;
+                        font-size: 15px;
+                        font-weight: 500;
+                        &::before {
+                            position: absolute;
+                            left: 50px;
+                            content: '';
+                            width: 12px;
+                            height: 12px;
+                            background-color: $green;
+                            border-radius: 50%;
+                        }
+                    }
+                    .link-request {
+                        color: #000;
+                        width: auto;
+                        height: auto;
+                        &:hover {
+                            background-color: #fff;
+                            border-radius: none;
+                        }
                     }
                 }
             }
