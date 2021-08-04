@@ -298,10 +298,12 @@
     }
     .enter{
         margin-top: 39px;
-        font-size: 24px;
+        font-size: 26px;
+        font-weight: 500;
     }
     .index__list{
         margin-bottom: 28px;
+        font-size: 16px;
         li{
             a{
                 color: $gray;
@@ -321,7 +323,7 @@
     }
     .index-main__input{
         margin-bottom: 35px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .index-main__btn{
         margin-bottom: 38px;
@@ -332,6 +334,7 @@
             border-radius: $border-radius;
             border: $border-green__1px;
             background-color: #fff;
+            font-size: 16px;
             &:hover{
                 background-color: $green;
                 color: #fff;
@@ -340,7 +343,7 @@
         }
     }
     .account__link{
-        font-size: 12px;
+        font-size: 16px;
         color: $green;
         text-decoration: underline;
     }
