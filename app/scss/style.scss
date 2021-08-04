@@ -187,3 +187,91 @@
     background-color: #9B9B9B;
 }
 /*END Disabled AND CHECKBOX */
+
+
+//STYLES
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    margin-right: auto;
+    margin-left: 300px;
+    &-text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $green;
+        padding-top: 4px;
+    }
+    &-inner {
+        margin-right: auto;
+        height: 40px;
+        margin-left: 72px;
+        border-left: 2px solid $green ;
+        padding-left: 20px;
+    }
+    &-form {
+        padding-top: 1px;
+        width: 400px;
+        border-bottom: 1px solid #BBBBBB;
+        input {
+            color: #54aa8c;
+            height: 25px;
+            border: none;
+            width: 355px;
+            padding-bottom: 6px;
+            &::placeholder {
+                color: #54aa8c;
+            }
+        }
+    }
+}
+
+.header__menu {
+    display: flex;
+    margin-right: auto;
+}
+.header__bell {
+    position: relative;
+    padding-right: 20px;
+    span {
+        position: absolute;
+        top: -3px;
+        left: 34px;
+        line-height: 18px;
+        text-align: center;
+        background-color: $orange;
+        color: #fff;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+    }
+    &-btn {
+        border-radius: 50%;
+        border: 2px solid $green;
+    }
+}
+.header__user {
+    padding-top: 13px;
+    padding-right: 10px;
+    font-size: 16px;
+    span a{
+        color: $orange;
+    }
+}
+.header__exit-btn {
+    padding-top: 10px;
+    position: relative;
+    span {
+        color: $green;
+        position: absolute;
+        top: 14px;
+        left: 34px;
+        text-decoration: underline;
+    }
+}
