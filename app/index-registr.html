@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <section class="index-main">
+    <section class="index-registr">
         <div class="container">
             <div class="index-main__inner">
                 <div class="index__logo">
@@ -28,43 +28,57 @@
                     ПРОЕКТНЫЙ СЕРВИС
                 </h1>
                 <p class="enter">РЕГИСТРАЦИЯ</p>
-                <form>  
-                    <input type="text" class="w-360 index-registr__input" placeholder="Фамилия">
-                    <input type="text" class="w-360 index-registr__input" placeholder="Имя">
-                    <input type="text" class="w-360 index-registr__input" placeholder="Отчество">
-                    <input type="text" class="w-360 index-registr__input" placeholder="Электронная почта">
-                    <input type="text" class="w-360 index-registr__input" placeholder="+ 7 926 000 10 10">
+                <div class="index-registr__box"> 
+                     <form class="form__input-box">
+                        <input type="text" class="w-360 index-registr__input" placeholder="Фамилия">
+                     </form>
+                     <form class="form__input-box">
+                        <input type="text" class="w-360 index-registr__input" placeholder="Имя">
+                     </form>
+                     <form class="form__input-box">
+                        <input type="text" class="w-360 index-registr__input" placeholder="Отчество">
+                     </form>
+                     <form class="form__input-box">
+                        <input type="text" class="w-360 index-registr__input" placeholder="Электронная почта">
+                     </form>
+                     <form class="form__input-box">
+                        <select>
+                            <option>+ 7 926 000 10 10</option>
+                            <option>+ 7 926 000 10 10</option>
+                            <option>+ 7 926 000 10 10</option>
+                        </select>
+                     </form>
                     <p class="index-registr__text">*Обязательно необходимо указать мобильный номер телефона. При первом входе на сайт на него придет код подтверждения. Авторизация на сайте по стационарному номеру невозможна.</p>
-                    <ul class="checkbox__inner-register">
+                    <div class="checkbox__inner-register">
                         
-                        <li class="checkbox__inner-title">Я являюсь:</li>
-                        <li>
+                        <div class="checkbox__inner-title">Я являюсь:</div>
+                        <div class="checkbox__inner-box__item">
                             <div class="checkbox__inner-item">
                                 <label class="check option checkbox-regist">
                                     <input class="check__input" type="checkbox" checked="">
                                     <span class="check__box"></span>  
-                                    проектировщик
+                                    <span class="checkbox-regist__profession">проектировщик</span> 
                                 </label> 
                             </div>
                             <div class="checkbox__inner-item">
                                 <label class="check option checkbox-regist">
                                     <input class="check__input" type="checkbox" checked="">
                                     <span class="check__box"></span>  
-                                    ландшафтная организация
+                                    <span class="checkbox-regist__profession">ландшафтная организация</span> 
                                 </label> 
                             </div>
                             <div class="checkbox__inner-item">
                                 <label class="check option checkbox-regist">
                                     <input class="check__input" type="checkbox" checked="">
                                     <span class="check__box"></span>  
-                                    торговый партнер
+                                    <span class="checkbox-regist__profession">торговый партнер</span> 
                                 </label> 
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <input type="text" class="w-360 index-registr__input" placeholder="Название организации">
                     <input type="text" class="w-360 index-registr__input" placeholder="Должность">
-                    <select>
+                    <select class="index-registr__select">
                         <option>[Выберите регион]</option>
                         <option>[Выберите регион]</option>
                         <option>[Выберите регион]</option>
@@ -73,7 +87,7 @@
                     <div class="index-registr__btn">
                         <button>Зарегестрироваться</button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
