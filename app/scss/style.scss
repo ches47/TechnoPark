@@ -201,7 +201,7 @@
 .header__search {
     display: flex;
     margin-right: auto;
-    margin-left: 300px;
+    margin-left: 200px;
     &-text {
         font-size: 24px;
         font-weight: 500;
@@ -347,6 +347,28 @@
         color: $green;
         text-decoration: underline;
     }
+
+//pagination
+.pagination {
+    padding-top: 40px;
+    margin-left: 100px;
+    text-align: center;
+}
+.pagination-menu {
+    max-width: 490px;
+    text-align: right;
+    span {
+        font-size: 18px;
+    }
+    &__arrow {
+        color: $orange;
+        padding: 0 6px;
+        font-size: 20px;
+    }
+    &__bolt {
+        font-weight: 500;
+    }
+}
 
 .main {
     padding-top: 80px;
