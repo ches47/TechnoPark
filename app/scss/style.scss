@@ -213,11 +213,11 @@
     &-form {
         padding-top: 1px;
         width: 400px;
-        
+    
 
         input[type=text] {
             -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
             border: none;
             border-bottom: 1px solid #54aa8c;
         }
