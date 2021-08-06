@@ -114,10 +114,10 @@
 
 .title__on-page {
     font-family: $fontRoboto;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 500;
     color: $orange;
-    padding: 5px 0 10px 20px;
+    // padding: 5px 0 10px 20px;
 }
 
 
@@ -502,6 +502,7 @@
     }
 
 .main__block {
+    padding: 5px 0 10px 20px;
     &-h3 {
         padding-left: 20px;
         font-size: 16px;
@@ -511,6 +512,12 @@
             text-decoration: underline;
             color: $green;
         }
+    }
+    &-paragraff {
+        padding-top: 30px;
+        font-size: 16px;
+        color: $green;
+        font-weight: 500;
     }
 }
 
@@ -533,5 +540,27 @@
     margin: 20px 0px 10px 30px;
     &--img {
         padding-top: 20px;
+    }
+}
+
+//Мои расчеты
+.main__block-lists,
+.list__customer {
+    display: flex;
+    .list__customer a{
+        display: flex;
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+        padding-top: 2px;
+        &:hover {
+            border-bottom: 2px solid $green;
+        }
+    }
+    .list__customer-link {
+        padding-left: 110px;
+    }
+    .list__customer-link--filter {
+        padding-left: 50px;
     }
 }
