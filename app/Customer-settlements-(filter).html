@@ -117,6 +117,8 @@
                     </a></li>
                 </ul>
             </aside>
+
+
             <div class="main__block">
                 <div class="main__block-lists">
                     <div class="title__on-page">Мои расчеты</div>
@@ -127,8 +129,77 @@
                 </div>
                 <div class="main__block-paragraff">
                     <p>Назначение ответсвенных</p>
-                </div>
-               
+                </div>              
+
+                <div class="select__block">
+                  <form class="form__calculation form__block">
+                    <label for="form__text">
+                        <div class="form__divText">
+                            Номер счета:
+                        </div>
+                    </label>
+                    <input type="number" id="fname" name="fname" class="w-181">
+                  </form>
+                   
+                  <form class="type__calculation form__block">      
+                    <label for="">
+                        <div class="form__divText">
+                            Тип расчета:     
+                        </div>   
+                        <select name="type__calculation">
+                            <option>[Не выбрано]</option>
+                            <option value="[Не выбрано]">Рубль</option> 
+                            <option value="[Не выбрано]">Гривна</option> 
+                            <option value="[Не выбрано]">Доллар $</option> 
+                        </select>
+                    </label>
+                  </form> 
+                  
+                  <form class="user__calculation form__block">
+                   <label for="">
+                        <div class="form__divText">
+                            Пользователь:
+                        </div>
+                    <select name="user__calculation">
+                        <option>[Не выбрано]</option>
+                        <option value="[Не выбрано]">БОТ</option> 
+                        <option value="[Не выбрано]">Человек</option> 
+                        <option value="[Не выбрано]">Админ</option> 
+                      </select>
+                   </label> 
+                  </form>  
+
+                  <form class="region__calculation form__block">
+                    <label for="">
+                        <div class="form__divText">
+                            Регион объекта: 
+                        </div>
+                      <select name="region__calculation">
+                        <option>[Не выбрано]</option>
+                        <option value="[Не выбрано]">Московская обл.</option> 
+                        <option value="[Не выбрано]">Белогородская обл.</option> 
+                        <option value="[Не выбрано]">Курская обл.</option> 
+                      </select>
+                    </label> 
+                  </form>   
+
+                    <form class="form__date form__block">
+                        <label for="form__text">
+                            <div class="form__divText">
+                                Дата: 
+                            </div>
+                        </label>
+                            <span class="span__divText--first">От</span> <input type="number" id="fname" name="fname" class="w-65">
+                            <span class="span__divText--second">До</span> <input type="number" id="fname" name="fname" class="w-65">
+                        </form>  
+                            <div class="index-main__btn customer-page__btn">
+                                <button class="index-main__btn customer-page__btn--first" >Поиск</button>
+                                <button class="index-main__btn customer-page__btn--second" >Очистить</button>
+                            </div>
+
+                    <!-- <div class="select-arrow"></div>   -->
+                </div> 
+             </div> 
             </div>
           </div>
         </div>
