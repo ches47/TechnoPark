@@ -137,8 +137,8 @@ select {
   }
 .select-arrow {
     position: absolute;
-    top: 38px;
-    right: 15px;
+    top: 58px;
+    right: 24px;
     width: 11px;
     height: 11px;
     pointer-events: none;
@@ -392,38 +392,7 @@ select {
         text-decoration: underline;
     }
 
-//pagination
-.pagination {
-    padding-top: 40px;
-    // max-width: 490px;
-    // margin-left: 20%;
-    display: flex;
-}
-.pagination-menu {
-    text-align: right;
-    span {
-        font-size: 18px;
-    }
-    &__arrow {
-        color: $orange;
-        padding: 0 6px;
-        font-size: 20px;
-    }
-    &__first {
-        color: #000;
-        font-weight: 300;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    &__bolt { 
-            color: #000;
-            font-weight: 500;
-            &:hover {
-                text-decoration: underline;
-            }
-    }
-}
+
 
 .main {
     padding-top: 80px;
@@ -577,6 +546,11 @@ select {
     &--img {
         padding-top: 20px;
     }
+    &:hover {
+        cursor: pointer;
+        background-color: #d4d6d270;
+        text-decoration: underline;
+    }
 }
 
 //Мои расчеты
@@ -607,7 +581,9 @@ select {
 // }
 
 .form__block {
+    position: relative;
     padding-bottom: 20px;
+    width: 370px;
 }
 
 .form__divText {
