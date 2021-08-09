@@ -70,15 +70,18 @@
                 <span><a class="breadcrumbs-menu__first" href="main.html">Онлайн расчеты продукции</a></span> 
                 <span class="breadcrumbs-menu__arrow">
                     <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
-                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Мои расчеты</a></span>
+                </span> <span ><a class="breadcrumbs-menu__first" href="#">Расчет очистных сооружений и емкостей TM Rainpark</a></span>
+                <span class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Просмотр </a></span>
                 
             </div>
         </div>
     </section>
     <section class="main">
         <div class="container">
-           <div class="main__container">
-            <aside class="main__aside">
+          <div class="main__container">
+          <aside class="main__aside">
                 <ul class="main__list">
                     <li><a href="#" class="main__list-a">
                         <img src="img/page__page/clipboard.svg" alt="clipboard"> <span>Запрос на техническое решение</span> 
@@ -116,95 +119,123 @@
                         <img src="img/page__page/feedback.svg" alt="clipboard"><span>Обратная связь</span> 
                     </a></li>
                 </ul>
-            </aside>
-
-
-            <div class="main__block">
+          </aside>
+        <div class="main__block">
                 <div class="main__block-lists">
-                    <div class="title__on-page">Мои расчеты</div>
-                    <div class="list__customer">
-                        <div class="list__customer-link"> <a href="#">Список расчетов</a></div>
-                        <div class=" list__customer-link--filter active"><a href="#">Фильтры</a></div>
-                    </div>
+                    <div class="title__on-page">Просмотр</div>
                 </div>
+
                 <div class="main__block-paragraff">
-                    <p>Назначение ответсвенных</p>
-                </div>              
-
-                <div class="select__block">
-                  <form class="form__calculation form__block">
-                    <label for="form__text">
-                        <div class="form__divText">
-                            Номер счета:
-                        </div>
-                    </label>
-                    <input type="number" id="fname" name="fname" class="w-181">
-                  </form>
-                   
-                  <form class="type__calculation form__block">      
-                    <label for="">
-                        <div class="form__divText">
-                            Тип расчета:     
-                        </div>   
-                        <select name="type__calculation">
-                            <option>[Не выбрано]</option>
-                            <option value="[Не выбрано]">Рубль</option> 
-                            <option value="[Не выбрано]">Гривна</option> 
-                            <option value="[Не выбрано]">Доллар $</option> 
-                        </select>
-                    </label>
-                    <div class="select-arrow"></div> 
-                  </form> 
-                  
-                  <form class="user__calculation form__block">
-                   <label for="">
-                        <div class="form__divText">
-                            Пользователь:
-                        </div>
-                    <select name="user__calculation">
-                        <option>[Не выбрано]</option>
-                        <option value="[Не выбрано]">БОТ</option> 
-                        <option value="[Не выбрано]">Человек</option> 
-                        <option value="[Не выбрано]">Админ</option> 
-                      </select>
-                   </label> 
-                   <div class="select-arrow"></div> 
-                  </form>  
-
-                  <form class="region__calculation form__block">
-                    <label for="">
-                        <div class="form__divText">
-                            Регион объекта: 
-                        </div>
-                      <select name="region__calculation">
-                        <option>[Не выбрано]</option>
-                        <option value="[Не выбрано]">Московская обл.</option> 
-                        <option value="[Не выбрано]">Белогородская обл.</option> 
-                        <option value="[Не выбрано]">Курская обл.</option> 
-                      </select>
-                    </label> 
-                    <div class="select-arrow"></div> 
-                  </form>   
-
-                    <form class="form__date form__block">
-                        <label for="form__text">
-                            <div class="form__divText">
-                                Дата: 
-                            </div>
-                        </label>
-                            <span class="span__divText--first">От</span> <input type="number" id="fname" name="fname" class="w-65" step="1" placeholder="1">
-                            <span class="span__divText--second">До</span> <input type="number" id="fname" name="fname" class="w-65" step="1" placeholder="31">
-                        </form>  
-                            <div class="index-main__btn customer-page__btn">
-                                <button class="index-main__btn customer-page__btn--first" >Поиск</button>
-                                <button class="index-main__btn customer-page__btn--second" >Очистить</button>
-                            </div>
-
-                    <!-- <div class="select-arrow"></div>   -->
+                    <p>Расчет</p>
+                </div>   
+                
+               <div class="main__block-settlements">
+                <div class="main__block-text">
+                    <div class="main__block-text--name">Номер расчета:</div>
+                    <div class="main__block-text--about">11233</div>
                 </div> 
-             </div> 
-            </div>
-          </div>
+
+                <div class="main__block-text">
+                    <div class="main__block-text--name">Название объекта:</div>
+                    <div class="main__block-text--about">11233</div>
+                </div> 
+
+                <div class="main__block-text">
+                    <div class="main__block-text--name">Дата создания:</div>
+                    <div class="main__block-text--about">16.12.2020</div>
+                </div> 
+
+                <div class="main__block-text">
+                    <div class="main__block-text--name">Тип расчета:</div>
+                    <div class="main__block-text--about">Расчет объема ёмкости для накопления максимального суточного объема дождевого стока </div>
+                </div> 
+               </div> 
+
+                <div class="main__block-result">
+                    <div class="main__block-paragraff">
+                        <p>Результаты расчета объема ёмкости</p>
+                    </div>   
+                    <div class="main__block-text">
+                        <div class="main__block-text--name">Месторасположение площади водосбора:</div>
+                        <div class="main__block-text--about">Ростов-на-Дону</div>
+                    </div> 
+    
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Регион, в котором расположена площадь водосбора:</div>
+                            <div class="main__block-text--about">Ростовская область</div>
+                        </div> 
+        
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Средний максимум суточного слоя осадков, Hср:</div>
+                            <div class="main__block-text--about">41.00</div>
+                        </div> 
+        
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Коэффициент вариации суточных осадков, Cv:</div>
+                            <div class="main__block-text--about">0.49 </div>
+                        </div> 
+
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Коэффициент асимметрии кривой обеспеченности, Cs:</div>
+                            <div class="main__block-text--about">1.50</div>
+                        </div> 
+
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Нормированное отклонение, Ф:
+                            </div>
+                            <div class="main__block-text--about">0.41</div>
+                        </div> 
+
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Максимальный суточный слой осадков, Hр, мм:</div>
+                            <div class="main__block-text--about">31.56</div>
+                        </div> 
+
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Средний коэффициент стока, Ψmid:</div>
+                            <div class="main__block-text--about">0.801</div>
+                        </div> 
+                
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Площадь кровли и асфальтобетонных покрытий, F1, га:</div>
+                            <div class="main__block-text--about">0.165</div>
+                        </div> 
+
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Площадь спланированных грунтовых поверхностей, F6, га:
+                            </div>
+                            <div class="main__block-text--about">0.041</div>
+                        </div> 
+
+                        <div class="main__block-text">
+                            <div class="main__block-text--name">Период однократного превышения расчетной интенсивности, P, годы:</div>
+                            <div class="main__block-text--about">1</div>
+                        </div> 
+            
+                    <div class="main__block-text">
+                        <div class="main__block-text--name">Объем стока от расчетного дождя, направляемый на очистку, Wос.д., м3:
+                        </div>
+                        <div class="main__block-text--about">52.05</div>
+                    </div> 
+
+                    <div class="main__block-text">
+                        <div class="main__block-text--name">Коэффициент запаса:</div>
+                        <div class="main__block-text--about">1.20</div>
+                    </div> 
+
+                <div class="main__block-text">
+                    <div class="main__block-text--name">Требуемый объем емкости, Wемк, м3:</div>
+                    <div class="main__block-text--about">62.47</div>
+                </div> 
+                </div>
+
+                <div class="main__block-buttons">
+                    <button type="button" class="btn print__btn">Распечатать результаты</button>
+                    <button type="button" class="btn edit__btn">Редактировать</button>
+                    <button type="button" class="btn copy__btn">Копировать расчет</button>
+                    <button type="button" class="btn download__btn">Скачать ПЗ</button>
+                    <button type="button" class="btn delete__btn">Удалить</button>
+                </div>
         </div>
     </section>
         
