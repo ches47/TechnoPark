@@ -263,11 +263,11 @@ select {
     &-form {
         padding-top: 1px;
         width: 400px;
-        
+    
 
         input[type=text] {
             -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
             border: none;
             border-bottom: 1px solid #54aa8c;;
         }
@@ -658,7 +658,7 @@ select {
         display: flex;
         color: #000;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 15px;
         padding-top: 2px;
         &:hover {
             border-bottom: 2px solid $green;
@@ -698,5 +698,40 @@ select {
     }
     .span__divText--first {
         padding: 0 10px 0 0;
+    }
+}
+// фильтры (объекты)
+.object__inner{
+    padding-top: 48px;
+}
+.object__item{
+display: flex;
+
+}
+.object__item-title{
+    font-size: 14px;
+    color: $gray;
+    margin-bottom: 30px;
+    .object__item-title-text{
+        margin-bottom: 30px;
+    }
+}
+.object__item-content{
+    margin-left: 187px;
+    color: $gray;
+    .object__item-content-text{
+        margin-bottom: 30px;
+        .object__item-content-text__link{
+            color: $green;
+            text-decoration: underline;
+        }
+    }
+}
+.object-btn{
+    background-color: transparent;
+    transition: all .3s;
+    &:hover{
+        background-color: $green;
+        color: #fff;
     }
 }
