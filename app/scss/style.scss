@@ -130,7 +130,6 @@ select {
     border: 2px solid $green;
     -webkit-appearance: none;
     -moz-appearance: none;
-
   }
   select::-ms-expand {
     display: none;
@@ -145,8 +144,26 @@ select {
     border-style: solid;
     border-width: 8px 5px 0 5px;
     border-color: $orange transparent transparent transparent;
-  }
+}
 
+.characteristics {
+    padding-top: 40px;
+}
+.characteristics__block {
+    padding-bottom: 0px;
+    width: 370px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/main__page/red__star.png') no-repeat right center;
+        position: absolute;
+        top: 36px;
+        right: -11px;
+        width: 11px;
+        height: 11px;
+    }
+}
 
 .title__on-page {
     font-family: $fontRoboto;
@@ -722,6 +739,41 @@ display: flex;
 .object-btn{
     background-color: transparent;
     transition: all .3s;
+    &:hover{
+        background-color: $green;
+        color: #fff;
+    }
+}
+// textarea
+.textarea{
+    width: $w-297;
+    height: 102px;
+    border-radius: $border-radius; 
+    border: $border-green__1px;
+    padding-left: $padding__left-11px;
+    outline: none;
+}
+// редактировать статус 
+.edit-the-status__form{
+padding-top: 46px;
+color: $gray;
+}
+.edit-the-status__box{
+    display: flex;
+    margin-bottom: 30px; 
+    .textarea{
+        margin-left: 38px;
+    }
+}
+.edit-the-status__text{
+    margin-top: 0;
+}
+.edit-the-status__btn{
+    background-color: transparent;
+    transition: all .3s;
+    & + .edit-the-status__btn{
+        margin-left: 20px;
+    }
     &:hover{
         background-color: $green;
         color: #fff;
