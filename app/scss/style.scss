@@ -149,6 +149,26 @@ select {
 .characteristics {
     padding-top: 40px;
 }
+.characteristics__lines {
+    padding-bottom: 0px;
+    width: 470px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/main__page/red__star.png') no-repeat right center;
+        position: absolute;
+        top: 44px;
+        right: 85px;
+        width: 11px;
+        height: 11px;
+    }
+    .select-arrow {
+        position: absolute;
+        top: 58px;
+        right: 121px;
+    }
+}
 .characteristics__block {
     padding-bottom: 0px;
     width: 370px;
@@ -217,6 +237,10 @@ select {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow: 0 0 0 0.1em $green;
+}
+.main__block-check {
+    padding-left: 3.3em;
+    padding-top: 3.3em;
 }
 
 /* Checked */
@@ -559,6 +583,7 @@ select {
         margin-bottom: 30px;
     }
     &-buttons {
+        padding-top: 20px;
         button {
             padding: 5px 35px;
             cursor: pointer;
