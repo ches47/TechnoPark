@@ -607,6 +607,10 @@ select {
                     border-right: none;
                 }
             }
+            .info-block__data {
+                color: $green;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -653,7 +657,7 @@ select {
         }
     }
     .list__customer-link {
-        padding-left: 110px;
+        padding-left: 50px;
     }
     .list__customer-link--filter {
         padding-left: 50px;
