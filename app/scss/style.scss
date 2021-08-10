@@ -769,3 +769,38 @@ display: flex;
         color: #fff;
     }
 }
+// textarea
+.textarea{
+    width: $w-297;
+    height: 102px;
+    border-radius: $border-radius; 
+    border: $border-green__1px;
+    padding-left: $padding__left-11px;
+    outline: none;
+}
+// редактировать статус 
+.edit-the-status__form{
+padding-top: 46px;
+color: $gray;
+}
+.edit-the-status__box{
+    display: flex;
+    margin-bottom: 30px; 
+    .textarea{
+        margin-left: 38px;
+    }
+}
+.edit-the-status__text{
+    margin-top: 0;
+}
+.edit-the-status__btn{
+    background-color: transparent;
+    transition: all .3s;
+    & + .edit-the-status__btn{
+        margin-left: 20px;
+    }
+    &:hover{
+        background-color: $green;
+        color: #fff;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit-the-status</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./img/logo/Component.svg" alt="logo.png">
+                    </a>
+                </div>
+                <div class="header__search">
+                    <div class="header__search-text">
+                        ПРОЕКТНЫЙ СЕРВИС
+                    </div>
+                    <div class="header__search-inner">
+                        <div class="header__search-form">
+                            <form>
+                                <button type="submit">
+                                    <img src="./img/page__page/Search.svg" alt="Search" width="18">
+                                </button>
+                                <input type="text" placeholder="Строка для поиска..." required>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__bell">
+                        <span>1</span>
+                        <button type="menu" class="header__bell-btn">
+                            <img src="./img/page__page/notification.svg" alt="notification">
+                        </button>
+                    </div>
+                    <div class="header__user">
+                        Сотрудник (МПО): <span> <a href="#">Иван Иванов</a></span>
+                    </div>
+                    <div class="header__exit">
+                        <a href="#" class="header__exit-link">
+                            <button type="submit" class="header__exit-btn">
+                                <img src="./img/page__page/Exit.svg" alt="Exit">
+                                <span>Выйти</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs-menu">
+                <span><a class="breadcrumbs-menu__first" href="main.html">Главная</a></span> <span
+                    class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span>
+                <span><a class="breadcrumbs-menu__first" href="main.html">Запрос на техническое решение</a></span>
+                <span class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span> <span><a class="breadcrumbs-menu__first" href="#">Мои запросы</a></span>
+                <span class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span>
+                <span><a class="breadcrumbs-menu__bolt" href="#">Редактировать статус</a></span>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="main__container">
+                <aside class="main__aside">
+                    <ul class="main__list">
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/clipboard.svg" alt="clipboard"> <span>Запрос на техническое
+                                    решение</span>
+                            </a></li>
+                        <ul class="list__request">
+                            <li class="main__list-li"><a href="#" class="link-request">
+                                    Мои запросы
+                                </a></li>
+                            <li class="main__list-li"><a href="#" class="link-request">Запросы клиентов</a></li>
+                        </ul>
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/calculator.svg" alt="clipboard">
+                                <span>Онлайн расчеты продукции</span>
+                            </a></li>
+                        <ul class="list__request">
+                            <li class="main__list-li"><a href="#" class="link-request">
+                                    Мои расчеты
+                                </a></li>
+                            <li class="main__list-li"><a href="#" class="link-request">Расчеты клиентов </a></li>
+                            <li class="main__list-li"><a href="#" class="link-request">Онлайн расчеты </a></li>
+                        </ul>
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/folder.svg" alt="clipboard"><span> Информация о
+                                    продукции</span>
+                            </a></li>
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/diagram.svg" alt="clipboard"><span>Статистика</span>
+                            </a></li>
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/calendar.svg" alt="clipboard"><span>Отчеты инженеров</span>
+                            </a></li>
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/admin-with-cogwheels.svg"
+                                    alt="clipboard"><span>Администрирование</span>
+                            </a></li>
+                        <li><a href="#" class="main__list-a">
+                                <img src="img/page__page/feedback.svg" alt="clipboard"><span>Обратная связь</span>
+                            </a></li>
+                    </ul>
+                </aside>
+
+                <div class="main__block">
+                    <div class="main__block-lists">
+                        <div class="title__on-page">Редактировать статус</div>
+                    </div>
+                    <form class="edit-the-status__form">
+                        <div class="edit-the-status__box">
+                            <p class="edit-the-status__text">Статус:</p>
+                            
+                        </div>
+                        <div class="edit-the-status__box">
+                            <p class="edit-the-status__text">Комментарий</p>
+                            <textarea class="textarea" placeholder="Создан новый запрос"></textarea>
+                        </div>
+                    </form>
+                    <button class="w-107 edit-the-status__btn">Сохранить</button>
+                    <button class="w-107 edit-the-status__btn">Назад</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
