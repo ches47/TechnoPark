@@ -564,7 +564,7 @@ select {
     }
     &-statistics {
         padding-top: 30px;
-        .statistics-title {
+        .statistics-title{
             display: flex;
             justify-content: space-around;
             max-width: 1088px;
@@ -573,7 +573,7 @@ select {
             background: rgba(177, 178, 178, 0.2);
             // background: $light-gray;
             padding: 36px 15px;
-            .statistics-name {
+            .statistics-name{
                 font-size: 15px;
                 font-weight: 500;
                 border-right: 1px solid #bbb;
@@ -582,7 +582,35 @@ select {
                     border-right: none;
                 }
             }
-
+        }
+    }
+    &-info-block {
+        max-height: 680px;
+        overflow-x: hidden;
+        margin-top: 30px;
+        .info-block {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+            max-width: 1088px;
+            height: 87px;
+            border-radius: 10px;
+            background: #B8FFB633;
+            padding: 36px 15px;
+            .info-name{
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                border-right: 1px solid #bbb;
+                padding-right: 15px;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            .info-block__data {
+                color: $green;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -629,7 +657,7 @@ select {
         }
     }
     .list__customer-link {
-        padding-left: 110px;
+        padding-left: 50px;
     }
     .list__customer-link--filter {
         padding-left: 50px;
