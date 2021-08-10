@@ -70,7 +70,10 @@
                 <span><a class="breadcrumbs-menu__first" href="main.html">Онлайн расчеты продукции</a></span> 
                 <span class="breadcrumbs-menu__arrow">
                     <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
-                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Мои расчеты</a></span>
+                </span> <span ><a class="breadcrumbs-menu__first" href="#">Расчеты линейного водоотвода серий</a></span>
+                <span class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Шаг 1 Характеристика площади водосбора</a></span>
             </div>
         </div>
     </section>
@@ -78,7 +81,7 @@
         <div class="container">
           <div class="main__container">
           
-            <aside class="main__aside">
+          <aside class="main__aside">
                 <ul class="main__list">
                     <li><a href="#" class="main__list-a">
                         <img src="img/page__page/clipboard.svg" alt="clipboard"> <span>Запрос на техническое решение</span> 
@@ -118,9 +121,65 @@
                 </ul>
           </aside>
 
-          
+          <div class="main__block">
+            <div class="main__block-lists">
+                <div class="title__on-page">ШАГ 1. ХАРАКТЕРИСТИКА ПЛОЩАДИ ВОДОСБОРА</div>
+            </div>  
 
-          
+            <div class="select__block characteristics">
+                <form class="form__calculation  characteristics__block">
+                  <label for="form__text">
+                      <div class="form__divText">
+                          Тип расчета:
+                      </div>
+                  </label>
+                  <p>Подбор лотка по расходу сточных вод</p>
+                </form>
+                 
+                <form class="type__calculation characteristics__block">      
+                  <label for="">
+                      <div class="form__divText">
+                        Название объекта:     
+                      </div>   
+                      <label for="form__text">
+                        <input type="text" class="w-266">
+                    </label>
+                  </label>
+                </form> 
+                
+                <form class="type__calculation characteristics__block">      
+                    <label for="">
+                        <div class="form__divText">
+                            Месторасположение площади водосбора:     
+                        </div>   
+                        <select name="type__calculation" class="type__calculation">
+                            <option>[Не выбрано]</option>
+                            <option value="[Не выбрано]">1кв</option> 
+                            <option value="[Не выбрано]">10кв</option> 
+                            <option value="[Не выбрано]">100кв</option> 
+                        </select>
+                    </label>
+                    <div class="select-arrow"></div> 
+                  </form> 
+
+                  <form class="type__calculation characteristics__block">      
+                    <label for="">
+                        <div class="form__divText">
+                            Расход дождевого стока, л/с:     
+                        </div>   
+                        <label for="form__text">
+                          <input type="number" class="w-266" placeholder="0">
+                      </label>
+                    </label>
+                  </form> 
+ 
+                    <div class="index-main__btn customer-page__btn">
+                        <button class="index-main__btn customer-page__btn--first" >Далее</button>
+                    </div>
+            </div> 
+            
+         </div>   
+
         </div> 
     </section>
 
