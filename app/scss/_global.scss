@@ -39,6 +39,10 @@ button {
     cursor: pointer;
 }
 
+textarea {
+    resize: none;
+}
+
 .container {
     max-width: 1850px;
     margin: 0 auto;
