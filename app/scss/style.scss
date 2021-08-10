@@ -169,6 +169,37 @@ select {
         right: 121px;
     }
 }
+.characteristics__trays {
+    padding-bottom: 0px;
+    width: 300px;
+    position: relative;
+    padding-bottom: 20px;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/main__page/red__star.png') no-repeat right center;
+        position: absolute;
+        top: 44px;
+        right: 145px;
+        width: 11px;
+        height: 11px;
+    }
+    &::before {
+        content: '?';
+        display: block;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        top: 14px;
+        right: -6px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        background-color: $orange;
+        border-radius: 50%;
+    }
+
+}
 .characteristics__block {
     padding-bottom: 0px;
     width: 370px;
@@ -227,8 +258,8 @@ select {
 
 .check__box {
     position: absolute;
-    margin-top: 0.5em;
-    margin-left: -1.1em;
+    margin-top: 0px;
+    margin-left: 0px;
     width: $w-22;
     height: $w-22;
     overflow: hidden;
@@ -239,8 +270,7 @@ select {
     box-shadow: 0 0 0 0.1em $green;
 }
 .main__block-check {
-    padding-left: 3.3em;
-    padding-top: 3.3em;
+    padding-left: 20px;
 }
 
 /* Checked */
