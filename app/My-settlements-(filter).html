@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>My-settlements-(filter)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -66,7 +66,12 @@
             <div class="breadcrumbs-menu">
                 <span><a class="breadcrumbs-menu__first" href="main.html">Главная</a></span> <span class="breadcrumbs-menu__arrow">
                     <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
-                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Главная</a></span>
+                </span> 
+                <span><a class="breadcrumbs-menu__first" href="main.html">Онлайн расчеты продукции</a></span> 
+                <span class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Мои расчеты</a></span>
+                
             </div>
         </div>
     </section>
@@ -112,10 +117,92 @@
                     </a></li>
                 </ul>
             </aside>
+
+
             <div class="main__block">
-                <div class="title__on-page">Главная</div>
-                <div class="main__block-h3">
-                    <h3>Приветствую, <span> <a href="#"> Иван Иванов!</a></span></h3></div>
+                <div class="main__block-lists">
+                    <div class="title__on-page">Мои расчеты</div>
+                    <div class="list__customer">
+                        <div class="list__customer-link"> <a href="#">Список расчетов</a></div>
+                        <div class=" list__customer-link--filter active"><a href="#">Фильтры</a></div>
+                    </div>
+                </div>
+                <div class="main__block-paragraff">
+                    <p>Назначение ответсвенных</p>
+                </div>              
+
+                <div class="select__block">
+                  <form class="form__calculation form__block">
+                    <label for="form__text">
+                        <div class="form__divText">
+                            Номер счета:
+                        </div>
+                    </label>
+                    <input type="number" id="fname" name="fname" class="w-181">
+                  </form>
+                   
+                  <form class="type__calculation form__block">      
+                    <label for="">
+                        <div class="form__divText">
+                            Тип расчета:     
+                        </div>   
+                        <select name="type__calculation">
+                            <option>[Не выбрано]</option>
+                            <option value="[Не выбрано]">Рубль</option> 
+                            <option value="[Не выбрано]">Гривна</option> 
+                            <option value="[Не выбрано]">Доллар $</option> 
+                        </select>
+                    </label>
+                    <div class="select-arrow"></div> 
+                  </form> 
+                  
+                  <form class="user__calculation form__block">
+                   <label for="">
+                        <div class="form__divText">
+                            Пользователь:
+                        </div>
+                    <select name="user__calculation">
+                        <option>[Не выбрано]</option>
+                        <option value="[Не выбрано]">БОТ</option> 
+                        <option value="[Не выбрано]">Человек</option> 
+                        <option value="[Не выбрано]">Админ</option> 
+                      </select>
+                   </label> 
+                   <div class="select-arrow"></div> 
+                  </form>  
+
+                  <form class="region__calculation form__block">
+                    <label for="">
+                        <div class="form__divText">
+                            Регион объекта: 
+                        </div>
+                      <select name="region__calculation">
+                        <option>[Не выбрано]</option>
+                        <option value="[Не выбрано]">Московская обл.</option> 
+                        <option value="[Не выбрано]">Белогородская обл.</option> 
+                        <option value="[Не выбрано]">Курская обл.</option> 
+                      </select>
+                    </label> 
+                    <div class="select-arrow"></div> 
+                  </form>   
+
+                    <form class="form__date form__block">
+                        <label for="form__text">
+                            <div class="form__divText">
+                                Дата: 
+                            </div>
+                        </label>
+                            <span class="span__divText--first">От</span> <input type="number" id="fname" name="fname" class="w-65" step="1" placeholder="1">
+                            <span class="span__divText--second">До</span> <input type="number" id="fname" name="fname" class="w-65" step="1" placeholder="31">
+                        </form>  
+                            <div class="index-main__btn customer-page__btn">
+                                <button class="index-main__btn customer-page__btn--first" >Поиск</button>
+                                <button class="index-main__btn customer-page__btn--second" >Очистить</button>
+                            </div>
+
+                    <!-- <div class="select-arrow"></div>   -->
+                </div> 
+             </div> 
             </div>
           </div>
         </div>

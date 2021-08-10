@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Customer-settlements</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -66,13 +66,18 @@
             <div class="breadcrumbs-menu">
                 <span><a class="breadcrumbs-menu__first" href="main.html">Главная</a></span> <span class="breadcrumbs-menu__arrow">
                     <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
-                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Главная</a></span>
+                </span> 
+                <span><a class="breadcrumbs-menu__first" href="main.html">Онлайн расчеты продукции</a></span> 
+                <span class="breadcrumbs-menu__arrow">
+                    <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
+                </span> <span ><a class="breadcrumbs-menu__bolt" href="#">Мои расчеты</a></span>
             </div>
         </div>
     </section>
     <section class="main">
         <div class="container">
-           <div class="main__container">
+          <div class="main__container">
+          
             <aside class="main__aside">
                 <ul class="main__list">
                     <li><a href="#" class="main__list-a">
@@ -111,16 +116,42 @@
                         <img src="img/page__page/feedback.svg" alt="clipboard"><span>Обратная связь</span> 
                     </a></li>
                 </ul>
-            </aside>
-            <div class="main__block">
-                <div class="title__on-page">Главная</div>
-                <div class="main__block-h3">
-                    <h3>Приветствую, <span> <a href="#"> Иван Иванов!</a></span></h3></div>
-            </div>
-          </div>
-        </div>
+          </aside>
+
+          <div class="main__block">
+            <div class="main__block-lists">
+                <div class="title__on-page">Расчеты клиентов</div>
+                <div class="list__customer">
+                    <div class="list__customer-link"> <a href="#">Список расчетов</a></div>
+                    <div class=" list__customer-link--filter active"><a href="#">Фильтры</a></div>
+                </div>
+            </div>  
+            <div class="main__block-statistics">
+                <div class="statistics-blocks">
+                    <div class="statistics-title">
+                        <div class="statistics-name statistics-title__number">
+                            Номер расчета
+                        </div>
+                        <div class="statistics-name statistics-title__object">
+                            Название объекта
+                        </div>
+                        <div class="statistics-name statistics-title__type">
+                            Тип расчёта
+                        </div>
+                        <div class="statistics-name statistics-title__user">
+                            Пользователь
+                        </div>
+                        <div class="statistics-name statistics-title__region">
+                            Регион объекта
+                        </div>
+                        <div class="statistics-name statistics-title__data">
+                            Дата создания
+                        </div>
+                    </div>
+                </div>
+            </div>          
+         </div> 
     </section>
-        
     
     
     

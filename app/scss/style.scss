@@ -43,7 +43,7 @@
 .w-181 {
     width: $w-181;
     height: $h-30;
-    border: $border-green__1px;
+    border: $border-green__2px;
     border-radius: $border-radius;
     padding-left: $padding__left-11px;
     padding-right: $padding__left-11px;
@@ -112,12 +112,48 @@
     padding-right: $padding__left-11px;
 }
 
+// select
+form .select {
+    margin-bottom: 15px;
+    position: relative;
+}
+select {
+    width: 366px;
+    height: 41px;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: #e6e6e6;
+    color: #000;
+    border-radius: 10px;
+    border: 2px solid $green;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+  }
+  select::-ms-expand {
+    display: none;
+  }
+.select-arrow {
+    position: absolute;
+    top: 58px;
+    right: 24px;
+    width: 11px;
+    height: 11px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: $orange transparent transparent transparent;
+  }
+
+
 .title__on-page {
     font-family: $fontRoboto;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 27px;
+    font-weight: 700;
     color: $orange;
-    padding: 5px 0 10px 20px;
+    // padding: 5px 0 10px 20px;
 }
 
 
@@ -356,41 +392,10 @@
         text-decoration: underline;
     }
 
-//pagination
-.pagination {
-    padding-top: 40px;
-    // max-width: 490px;
-    // margin-left: 20%;
-    display: flex;
-}
-.pagination-menu {
-    text-align: right;
-    span {
-        font-size: 18px;
-    }
-    &__arrow {
-        color: $orange;
-        padding: 0 6px;
-        font-size: 20px;
-    }
-    &__first {
-        color: #000;
-        font-weight: 300;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    &__bolt { 
-            color: #000;
-            font-weight: 500;
-            &:hover {
-                text-decoration: underline;
-            }
-    }
-}
+
 
 .main {
-    padding-top: 80px;
+    padding: 80px 0;
     &__container {
         display: flex;
         justify-content: start;
@@ -502,6 +507,8 @@
     }
 
 .main__block {
+    padding: 5px 0 10px 20px;
+    width: 100%;
     &-h3 {
         padding-left: 20px;
         font-size: 16px;
@@ -510,6 +517,72 @@
         a {
             text-decoration: underline;
             color: $green;
+        }
+    }
+    &-paragraff {
+        padding: 30px 0 0 0;
+        font-size: 16px;
+        color: $green;
+        font-weight: 700;
+    }
+    &-text {
+        min-width: 900px;
+        display: flex;
+        padding: 20px 0;
+        justify-content: space-between;
+        
+        &--name {
+            font-weight: 500;
+        }
+        &--about {
+            text-decoration: underline;
+        }
+    }
+    &-result {
+        margin-bottom: 30px;
+    }
+    &-buttons {
+        button {
+            padding: 5px 35px;
+            cursor: pointer;
+            font-weight: 500;
+            border-radius: 5px;
+            border: 1px solid #006843;
+            background-color: #fff;
+            font-size: 16px;
+            &:hover {
+                background-color: #006843;
+                color: #fff;
+                -webkit-transition: 0.5s;
+                -o-transition: 0.5s;
+                transition: 0.5s;
+            }
+        }
+        .btn {
+            margin-right: 15px;
+        }
+    }
+    &-statistics {
+        padding-top: 30px;
+        .statistics-title {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1088px;
+            height: 87px;
+            border-radius: 10px;
+            background: rgba(177, 178, 178, 0.2);
+            // background: $light-gray;
+            padding: 36px 15px;
+            .statistics-name {
+                font-size: 15px;
+                font-weight: 500;
+                border-right: 1px solid #bbb;
+                padding-right: 30px;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
         }
     }
 }
@@ -533,5 +606,96 @@
     margin: 20px 0px 10px 30px;
     &--img {
         padding-top: 20px;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #d4d6d270;
+        text-decoration: underline;
+    }
+}
+
+//Мои расчеты
+.main__block-lists,
+.list__customer {
+    display: flex;
+    .list__customer a{
+        display: flex;
+        color: #000;
+        font-weight: 500;
+        font-size: 15px;
+        padding-top: 2px;
+        &:hover {
+            border-bottom: 2px solid $green;
+        }
+    }
+    .list__customer-link {
+        padding-left: 110px;
+    }
+    .list__customer-link--filter {
+        padding-left: 50px;
+    }
+}
+
+.form__block {
+    position: relative;
+    padding-bottom: 20px;
+    width: 370px;
+}
+
+.form__divText {
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 0;
+}
+
+.customer-page__btn {
+    padding-top: 30px;
+}
+
+.customer-page__btn--second {
+    margin-left: 30px;
+}
+
+.form__date {
+    span {
+        padding: 0 10px;
+    }
+    .span__divText--first {
+        padding: 0 10px 0 0;
+    }
+}
+// фильтры (объекты)
+.object__inner{
+    padding-top: 48px;
+}
+.object__item{
+display: flex;
+
+}
+.object__item-title{
+    font-size: 14px;
+    color: $gray;
+    margin-bottom: 30px;
+    .object__item-title-text{
+        margin-bottom: 30px;
+    }
+}
+.object__item-content{
+    margin-left: 187px;
+    color: $gray;
+    .object__item-content-text{
+        margin-bottom: 30px;
+        .object__item-content-text__link{
+            color: $green;
+            text-decoration: underline;
+        }
+    }
+}
+.object-btn{
+    background-color: transparent;
+    transition: all .3s;
+    &:hover{
+        background-color: $green;
+        color: #fff;
     }
 }

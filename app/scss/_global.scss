@@ -45,3 +45,33 @@ button {
     padding: 0 15px;
 }
 
+//breadcrumbs
+.breadcrumbs {
+    padding-top: 40px;
+    margin-left: 23.5%;
+}
+.breadcrumbs-menu {
+    display: inline-block;
+    span {
+        font-size: 18px;
+    }
+    &__arrow {
+        color: $orange;
+        padding: 0 6px;
+        font-size: 20px;
+    }
+    &__first {
+        color: #000;
+        font-weight: 300;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__bolt { 
+            color: #000;
+            font-weight: 500;
+            &:hover {
+                text-decoration: underline;
+            }
+    }
+}
