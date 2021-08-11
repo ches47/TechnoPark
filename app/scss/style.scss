@@ -112,6 +112,13 @@
     padding-right: $padding__left-11px;
 }
 
+#textarea__text {
+    border-radius: 5px;
+    border: 1px solid $green;
+    padding-left: 9px;
+    padding-top: 9px;
+}
+
 // select
 form .select {
     margin-bottom: 15px;
@@ -208,6 +215,22 @@ select {
         content: '';
         display: block;
         background: url('../img/main__page/red__star.png') no-repeat right center;
+        position: absolute;
+        top: 36px;
+        right: -11px;
+        width: 11px;
+        height: 11px;
+    }
+}
+
+.outcome__block {
+    padding-bottom: 0px;
+    width: 370px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/РМ00002516__page/greenStar.svg') no-repeat right center;
         position: absolute;
         top: 36px;
         right: -11px;
