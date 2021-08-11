@@ -884,3 +884,84 @@ color: $gray;
     }
 }
 // фильтры техническое решения 
+.active__tech-decision{
+    border-bottom: 2px solid $green;
+}
+.tech-decisions__button-box{
+    padding-top: 23px;
+}
+.tech-decisions__btn{
+    font-size: 11px;
+    background-color: transparent;
+    transition: all .3s;
+    &:hover{
+        background-color: $green;
+        color: #fff;
+    }
+    & + .tech-decisions__btn{
+        margin-left: 26px;
+    }
+}
+.tech-decisions__title{
+    color: $green;
+    margin: 22px 0px 18px 0px;
+}
+.tech-decisions__content-box{
+    color: $gray;
+    display: flex;
+    position: relative;
+}
+.tech-decisions__content-left{
+    &__item{
+        margin-bottom: 17px;
+        padding: 22px 0px 22px 56px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/page__page/bag-icon.png);
+            top: 22px;
+            left: 16px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &__item-active{
+        background-color: rgba(177, 178, 178, 0.2); 
+        max-width: 296px;
+        border-radius: 10px;
+    }
+}
+.tech-decisions__line{
+    height: 1px;
+    width: 17px;
+    background-color: $green;
+    position: absolute;
+    top: 31px;
+    left: 248px;
+}
+.tech-decisions__content-right{
+    max-width: 333px;
+    min-height: 181px;
+    background-color: rgba(177, 178, 178, 0.2); 
+    padding: 21px 21px 0px 25px;
+    margin-left: 22px;
+    border-radius: 10px;
+    .tech-decisions__content-right__title{
+        margin-bottom: 24px;
+    }
+    .tech-decisions__content-right__link{
+        color: $green;
+        cursor: pointer;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: -21px;
+            background-image: url(../img/РМ00002516__page/file.svg);
+            height: 16px;
+            width: 16px;
+        }
+    }
+}

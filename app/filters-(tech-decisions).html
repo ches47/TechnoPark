@@ -70,7 +70,7 @@
                     class="breadcrumbs-menu__arrow">
                     <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
                 </span>
-                <span><a class="breadcrumbs-menu__first active" href="main.html">Запрос на техническое решение</a></span>
+                <span><a class="breadcrumbs-menu__first" href="main.html">Запрос на техническое решение</a></span>
                 <span class="breadcrumbs-menu__arrow">
                     <img src="./img/page__page/pagination-arrow.svg" alt="breadcrumbs">
                 </span> <span><a class="breadcrumbs-menu__first" href="#">Мои запросы</a></span>
@@ -130,33 +130,40 @@
                         <div class="list__customer">
                             <div class="list__customer-link"> <a href="#">Объект</a></div>
                             <div class=" list__customer-link--filter active"><a href="#">События</a></div>
-                            <div class=" list__customer-link--filter active"><a href="#">Техническое решение</a></div>
+                            <div class=" list__customer-link--filter active "><a class="active__tech-decision" href="#">Техническое решение</a></div>
                             <div class=" list__customer-link--filter active"><a href="#">Расчеты</a></div>
                             <div class=" list__customer-link--filter active"><a href="#">Техническое задание</a></div>
                         </div>
                     </div>  
-                    <div class="object__inner">
-                        <div class="object__item">
-                            <div class="object__item-title">
-                               <div class="object__item-title-text">Карточка объекта:</div> 
-                               <div class="object__item-title-text">Название объекта:</div> 
-                               <div class="object__item-title-text">Регион объекта:</div> 
-                               <div class="object__item-title-text">ПМ:</div> 
-                               <div class="object__item-title-text">МПО:</div> 
-                               <div class="object__item-title-text">ИПС:</div> 
-                               <div class="object__item-title-text">Типология объекта:</div> 
+                    <div class="tech-decisions__button-box">
+                        <button class="w-107 tech-decisions__btn">Создать папку</button>
+                        <button class="w-107 tech-decisions__btn">Загрузить файл</button>
+                    </div>
+                    <div class="tech-decisions__title">
+                        Файлы проекта
+                    </div>
+                    
+                    <div class="tech-decisions__content-box">
+                        <ul class="tech-decisions__content-left">
+                            <li class="tech-decisions__content-left__item tech-decisions__content-left__item-active">
+                                16.12.2020-ПВ (Иванов)  
+                            </li>
+                            <li class="tech-decisions__content-left__item">
+                                КП внутренних поставщиков
+                            </li>
+                            <li class="tech-decisions__content-left__item">
+                                Материалы для ИПС
+                            </li>
+                        </ul>
+                        <div class="tech-decisions__line"></div>
+                        <div class="tech-decisions__content-right">
+                            <div class="tech-decisions__content-right__title">
+                                Содержимое папки 16.12.2020-ПВ (Иванов)  
                             </div>
-                            <div class="object__item-content">
-                                <div class="object__item-content-text">РМ000002516</div> 
-                                <div class="object__item-content-text">Строительство автодороги Ирнур-Нижний Осиял Параньгинского раойна РМЭ</div> 
-                                <div class="object__item-content-text">Руспублика Марий-Эл</div> 
-                                <div class="object__item-content-text"><a class="object__item-content-text__link" href="#">Иван Иванов</a></div> 
-                                <div class="object__item-content-text"><a class="object__item-content-text__link" href="#">Иван Михайлов</a></div> 
-                                <div class="object__item-content-text">Автодороги</div> 
-                                <div class="object__item-content-text">15.12.2020</div> 
-                            </div> 
+                            <div class="tech-decisions__content-right__link">
+                                    Загрузить файл16.12.2020-Марий Эл-Строительство автодороги Ирнур-Нижний Осиял-ПВ.zip 
+                            </div>
                         </div>
-                        <button class="w-107 object-btn">Удалить</button>
                     </div>
                 </div> 
             </div>
