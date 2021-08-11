@@ -908,9 +908,7 @@ color: $gray;
     }
 }
 // фильтры техническое решения 
-.active__tech-decision{
-    border-bottom: 2px solid $green;
-}
+
 .tech-decisions__button-box{
     padding-top: 23px;
 }
@@ -988,4 +986,48 @@ color: $gray;
             width: 16px;
         }
     }
+}
+// фильтры расчеты
+.filters-calculations__text{
+    color: $green;
+    margin-bottom: 27px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.filters-calculations__link-box{
+    margin-bottom: 35px;
+}
+.filters-calculations__link{
+    display: block;
+    color: $green;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.filters-calculations__title{
+    color: $green;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.filters-calculations__table{
+    display: flex;
+    align-items: center;
+    max-width: 1088px;
+    margin-bottom: 15px;
+    background-color: rgba(177, 178, 178, 0.2);
+    padding: 12px 0px 12px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.filters-calculations__table__item{
+    padding: 12px 0px 12px 17px;
+    width: 30%;
+    border-right: 1px solid #bbbbbb;
+    &:last-child{
+        border: none;
+    }
+}
+.filters-calculations__table-second{
+    background-color: #B8FFB6;
+    color: $gray;
+    font-weight: 300;
 }
