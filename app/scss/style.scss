@@ -1131,3 +1131,92 @@ color: $gray;
         font-weight: 300;
     }
 }
+// фильтры события 
+.filters-event__table{
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    max-width: 1088px;
+    margin-bottom: 15px;
+    background-color: rgba(177, 178, 178, 0.2);
+    padding: 12px 0px 12px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    
+}
+.filters-event__table-orange{
+    background-color: rgba(247, 144, 30, 0.2);
+    margin-top: 0;
+}
+.filters-event__table-green{
+    margin-top: 0;
+    background-color: rgba(184, 255, 182, 0.2);
+}
+.filters-event__table__item{
+    padding: 12px 0px 12px 17px;
+    border-right: 1px solid #bbbbbb;
+    width: 120px;
+    &:last-child{
+        border: none;
+    }
+}
+.filters-event__table__item-w198{
+    width: 181px;
+    text-align: center;
+}
+.filters-event__table__item-w283{
+    width: 191px;
+    text-align: left;
+}
+.filters-event__table__item-icon{
+    .filters-event__table__item-iconBTN{
+        background-color: transparent;
+    }
+    button + button{
+        margin-left: 18px;
+    }
+}
+.filters-event__btn{
+    font-size: 11px;
+    background-color: transparent;
+    transition: all .3s;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    &:hover{
+        background-color: $green;
+        color: #fff;
+    }
+}
+.filters-event__title-bottom{
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #3c3c3b;
+}
+.filters-event__input-box{
+    display: flex;
+    align-items: center;
+    .filters-event__status{
+        color: #3c3c3b;
+        font-weight: 300;
+    }
+    .filters-event__form{
+        margin-left: 71px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/main__page/red__star.png);
+            left: -11px;
+            top: 15px;
+            height: 8px;
+            width: 8px;
+        }
+        select{
+            width: 181px;
+            background-color: transparent;
+        }
+        .select-arrow{
+            left: 154px;
+        }
+    }
+}
