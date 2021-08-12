@@ -1050,7 +1050,7 @@ color: $gray;
     color: $gray;
     font-weight: 300;
 }
-<<<<<<< HEAD
+
 // фильтры техническое решения 
 .tech-task__inner-top{
     padding-top: 41px;
@@ -1238,7 +1238,6 @@ color: $gray;
         }
     }
 }
-=======
 
 .improvement {
     display: flex;
@@ -1321,7 +1320,30 @@ color: $gray;
     }
 }
 
+.information__files-list {
+    position: relative;
+    li {
+      padding-left: 30px;
+      padding-bottom: 15px;
+      a {
+        color: $green;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+      &::before {
+          content: '';
+          display: block;
+          background: url('../img/Catalog__page/file.svg') no-repeat right center;
+          position: absolute;
+          width: 21px;
+          height: 18px;
+          left: 0px;
+       }
+      }
+  }
+
+
 .information__files {
     padding-left: 55px;
 }
->>>>>>> origin/master
