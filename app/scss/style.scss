@@ -1085,3 +1085,47 @@ color: $gray;
       }
     }
 }
+
+.information {
+    display: flex;
+    &__catalog-name,
+    &__files-name {
+        padding: 20px 0;
+        color: $green;
+        font-weight: 700;
+    }
+    &__catalog-data {
+        width: 340px;
+        height: 285px;
+        border-right: 1px solid $light-gray;
+    }
+    &__catalog-list {
+        a {
+            color: #000;
+        }
+     }
+    
+}
+
+.information__catalog-list {
+      position: relative;
+      li {
+        padding-left: 30px;
+        padding-bottom: 15px;
+        a {
+        &::before {
+            content: '';
+            display: block;
+            background: url('../img/РМ00002516__page/folder.svg') no-repeat right center;
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            left: 0px;
+         }
+        }
+    }
+}
+
+.information__files {
+    padding-left: 55px;
+}
