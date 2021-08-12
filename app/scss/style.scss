@@ -120,10 +120,12 @@
 }
 
 // select
-form .select {
-    margin-bottom: 15px;
-    position: relative;
-}
+form{
+    .select {
+        margin-bottom: 15px;
+        position: relative;
+    }
+} 
 select {
     width: 366px;
     height: 41px;
@@ -143,8 +145,8 @@ select {
   }
 .select-arrow {
     position: absolute;
-    top: 58px;
-    right: 24px;
+    top: 17px;
+    left: 334px;
     width: 11px;
     height: 11px;
     pointer-events: none;
@@ -1030,4 +1032,102 @@ color: $gray;
     background-color: #B8FFB6;
     color: $gray;
     font-weight: 300;
+}
+// фильтры техническое решения 
+.tech-task__inner-top{
+    padding-top: 41px;
+    display: flex;
+}
+.tech-task__top-title{
+    color: $green;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.tech-task__top-link{
+    font-weight: 300;
+    color: $orange;
+}
+.tech-task__top-text{
+    max-width: 732px;
+    margin-left: 40px;
+    color: #3c3c3b;
+}
+.tech-task-files__title{
+    margin: 56px 0px 39px;
+    color: $green;
+}
+.tech-task-files__wrapper{
+    display: flex;
+    
+}
+.tech-task-files__inner{
+    margin-right: 30px;
+}
+.tech-task-files__inner-title{
+    margin-bottom: 34px;
+    font-weight: 300;
+    color: #3c3c3b;
+}
+.tech-task__select-box{
+    .tech-task__select-box__pdf{
+        margin-bottom: 20px;
+        color: $green;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+.tech-task__form{
+    select{
+        width: 266px;
+    }
+    .select-arrow{
+        left: 234px;
+    }
+}
+.tech-task__btn-input__box{
+    margin-left: 20px;
+    .tech-task__btn{
+        margin-top: 41px;
+        background-color: transparent;
+        font-size: 11px;
+        transition: all .3s;
+        color: #3c3c3b;
+        &:hover{
+            background-color: $green;
+            color: #fff;
+        }
+    }
+    .tech-task__input{
+        display: block;
+        margin-top: 29px;
+    }
+}
+.tech-task__bottom-content-title{
+    margin-top: 50px;
+    margin-bottom: 34px;
+    color: $green;
+    font-weight: 500;
+}
+.tech-task__bottom-box{
+    display: flex;
+    align-items: center;
+    .tech-task__bottom-ips{
+        margin-right: 133px;
+    }
+    .tech-task__bottom-form{
+        select{
+            width: 181px;
+        }
+        .select-arrow{
+            left: 157px;
+        }
+    }
+}
+.tech-task__bottom-checkbox{
+    margin-top: 61px;
+    .tech-task__bottom-checkbox-text{
+        margin-left: 45px;
+        color: #3c3c3b;
+        font-weight: 300;
+    }
 }
