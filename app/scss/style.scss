@@ -827,6 +827,23 @@ select {
     padding-top: 30px;
 }
 
+.edit-page__btn{    
+    button{
+        padding: 5px 15px;
+        cursor: pointer;
+        font-weight: 500;
+        border-radius: $border-radius;
+        border: $border-green__1px;
+        background-color: #fff;
+        font-size: 16px;
+        &:hover{
+            background-color: $green;
+            color: #fff;
+            transition: 0.5s;
+        }
+    }
+}
+
 .customer-page__btn--second {
     margin-left: 30px;
 }
@@ -1033,6 +1050,7 @@ color: $gray;
     color: $gray;
     font-weight: 300;
 }
+<<<<<<< HEAD
 // фильтры техническое решения 
 .tech-task__inner-top{
     padding-top: 41px;
@@ -1220,3 +1238,90 @@ color: $gray;
         }
     }
 }
+=======
+
+.improvement {
+    display: flex;
+    flex-wrap: wrap;
+    &-content {
+        padding-right: 20px;
+        &__btn {
+            position: relative;
+          button {
+              color: $green;
+              padding-left: 23px;
+              padding-top: 40px;
+              padding-bottom: 20px;
+              &::before {
+                content: '';
+                position: absolute;
+                // display: block;
+                background: url('../img/Catalog__page/pencil.svg') no-repeat center;
+                // top: 36px;
+                left: 1px;
+                width: 16px;
+                height: 16px;
+              }   
+          }
+      }
+      &__image {
+          border-left: 1px solid $light-gray;
+      }
+      &__link {
+        padding-top: 20px;
+          a {
+              color: $green;
+              text-decoration: underline;
+          }
+      }
+    }
+}
+
+.information {
+    display: flex;
+    &__catalog-name,
+    &__files-name {
+        padding: 20px 0;
+        color: $green;
+        font-weight: 700;
+    }
+    &__catalog-data {
+        padding-right: 20px;
+        width: 340px;
+        height: 285px;
+        border-right: 1px solid $light-gray;
+    }
+    &__catalog-list {
+        a {
+            color: #000;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+     }
+    
+}
+
+.information__catalog-list {
+      position: relative;
+      li {
+        padding-left: 30px;
+        padding-bottom: 15px;
+        a {
+        &::before {
+            content: '';
+            display: block;
+            background: url('../img/РМ00002516__page/folder.svg') no-repeat right center;
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            left: 0px;
+         }
+        }
+    }
+}
+
+.information__files {
+    padding-left: 55px;
+}
+>>>>>>> origin/master
