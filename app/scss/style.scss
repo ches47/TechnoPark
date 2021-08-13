@@ -1286,7 +1286,7 @@ color: $gray;
     }
     &__catalog-data {
         padding-right: 20px;
-        width: 340px;
+        width: 400px;
         height: 285px;
         border-right: 1px solid $light-gray;
     }
@@ -1318,6 +1318,24 @@ color: $gray;
          }
         }
     }
+}
+.information__catalog-list--li.active {
+    color: $green;
+}
+.information__catalog-folders {
+    padding-top: 20px;
+    a.folder {
+        &::before {
+            content: '';
+            display: block;
+            background: url('../img/РМ00002516__page/folder.svg') no-repeat right center;
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            left: 0px;
+            padding-left: 40px;
+         }
+        }
 }
 
 .information__files-list {
