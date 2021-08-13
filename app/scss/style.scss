@@ -1335,7 +1335,27 @@ color: $gray;
             left: 0px;
             padding-left: 40px;
          }
+     }
+
+}
+.information__catalog-attachment { 
+    li {
+        padding-top: 11px;
+        padding-bottom: 3px;
+    a.attachment-folder {
+        // padding-top: 16px;
+        &::before {
+            content: '';
+            display: block;
+            background: url('../img/РМ00002516__page/folder.svg') no-repeat right center;
+            position: absolute;
+            width: 21px;
+            height: 18px;
+            left: 60px;
+            padding-left: 10px;
+         }
         }
+     }
 }
 
 .information__files-list {
@@ -1364,4 +1384,24 @@ color: $gray;
 
 .information__files {
     padding-left: 55px;
+    &-data {
+        width: 400px;
+        &--zip {
+            position: relative;
+            a {
+                padding-bottom: 20px;
+                color: $green;
+                text-decoration: underline;
+                &::before {
+                    content: '';
+                    display: block;
+                    background: url('../img/РМ00002516__page/zip.svg') no-repeat right center;
+                    position: absolute;
+                    width: 21px;
+                    height: 18px;
+                    left: -29px;
+                 }
+            }
+        }
+    }
 }
