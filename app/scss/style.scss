@@ -145,7 +145,7 @@ select {
   }
 .select-arrow {
     position: absolute;
-    top: 17px;
+    top: 60px;
     left: 334px;
     width: 11px;
     height: 11px;
@@ -1101,6 +1101,7 @@ color: $gray;
     }
     .select-arrow{
         left: 234px;
+        top: 15px;
     }
 }
 .tech-task__btn-input__box{
@@ -1139,6 +1140,7 @@ color: $gray;
         }
         .select-arrow{
             left: 157px;
+            top: 15px;
         }
     }
 }
@@ -1236,6 +1238,7 @@ color: $gray;
         }
         .select-arrow{
             left: 154px;
+            top: 15px;
         }
     }
 }
@@ -1250,8 +1253,8 @@ color: $gray;
           button {
               color: $green;
               padding-left: 23px;
-              padding-top: 40px;
-              padding-bottom: 20px;
+              margin-top: 40px;
+              margin-bottom: 20px;
               &::before {
                 content: '';
                 position: absolute;
