@@ -1470,9 +1470,9 @@ color: $gray;
 
 .static__buttons {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
-
-    button.static__button {
+    button.static__button{
         border-radius: 10px;
         border: 1px solid $light-gray;
         width: 300px;
@@ -1486,5 +1486,36 @@ color: $gray;
     }
     :nth-child(1) {
         margin-right: 20px;
+    }
+}
+
+.admin__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.admin__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+button.admin__button {
+    border-radius: 10px;
+    border: 1px solid $light-gray;
+    width: 300px;
+    height: 109px;
+    text-align: center;
+    color: $green;
+    font-weight: 600;
+    font-size: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(129, 129, 129, 0.2);
+}
+.admin__buttons {
+    button {
+        margin-bottom: 30px;
+        margin-left: 20px;
     }
 }

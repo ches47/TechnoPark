@@ -1801,6 +1801,8 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -1820,5 +1822,40 @@ select::-ms-expand {
 
 .static__buttons :nth-child(1) {
   margin-right: 20px;
+}
+
+.admin__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.admin__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+button.admin__button {
+  border-radius: 10px;
+  border: 1px solid #cbcbcb;
+  width: 300px;
+  height: 109px;
+  text-align: center;
+  color: #006843;
+  font-weight: 600;
+  font-size: 18px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 15px rgba(129, 129, 129, 0.2);
+          box-shadow: 0px 0px 15px rgba(129, 129, 129, 0.2);
+}
+
+.admin__buttons button {
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
