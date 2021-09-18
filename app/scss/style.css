@@ -288,6 +288,68 @@ select::-ms-expand {
   right: 121px;
 }
 
+.edit__lines {
+  padding-bottom: 0px;
+  width: 470px;
+  position: relative;
+}
+
+.edit__lines::after {
+  content: '';
+  display: block;
+  background: url("../img/РМ00002516__page/greenStar.svg") no-repeat right center;
+  position: absolute;
+  top: 44px;
+  right: 85px;
+  width: 11px;
+  height: 11px;
+}
+
+.edit__lines .select-arrow {
+  position: absolute;
+  top: 58px;
+  right: 121px;
+}
+
+.edit__calculation {
+  width: 489px;
+  position: relative;
+}
+
+.edit__calculation::after {
+  content: '';
+  display: block;
+  background: url("../img/РМ00002516__page/greenStar.svg") no-repeat right center;
+  position: absolute;
+  top: 44px;
+  right: -21px;
+  width: 11px;
+  height: 11px;
+}
+
+.edit__calculation .select-arrow {
+  position: absolute;
+  top: 58px;
+  right: 121px;
+}
+
+.edit__trays {
+  padding-bottom: 0px;
+  width: 300px;
+  position: relative;
+}
+
+.edit__trays::after {
+  content: '';
+  display: block;
+  background: url("../img/РМ00002516__page/greenStar.svg") no-repeat right center;
+  position: absolute;
+  top: 44px;
+  right: 215px;
+  width: 11px;
+  height: 11px;
+}
+
 .characteristics__trays {
   padding-bottom: 0px;
   width: 300px;
