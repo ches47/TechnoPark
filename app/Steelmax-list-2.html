@@ -124,45 +124,33 @@
             </div>  
 
             <div class="main__block-settlements">
-                <form class="type__calculation edit__lines">      
+                <form class="type__calculation ">      
                     <label for="">
                         <div class="form__divText">
-                            Серия:     
+                            Наименование: 
                         </div>   
-                        <select name="type__calculation" class="type__calculation">
-                            <option>Basic</option>
-                            <option value="[Не выбрано]">1кв</option> 
-                            <option value="[Не выбрано]">10кв</option> 
-                            <option value="[Не выбрано]">100кв</option> 
-                        </select>
+                        <label for="form__text">
+                            <input type="text" class="w-375" placeholder="Лоток водоотводной ЛВ-80.140.80-НС Евро 80">
+                        </label>
                     </label>
                     <div class="select-arrow"></div> 
                   </form> 
 
-                <form class="type__calculation edit__trays">      
+                  <form class="type__calculation ">      
                     <label for="">
                         <div class="form__divText">
-                            Сечение, мм:    
+                            Артикул:
                         </div>   
                         <label for="form__text">
-                          <input type="number" class="w-65" placeholder="">
-                      </label>
+                            <input type="text" class="w-318" placeholder="511.08.01-М">
+                        </label>
                     </label>
+                    <div class="select-arrow"></div> 
                   </form> 
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Тип 1 стандартный, мм:
-                        </div>   
-                        <label for="form__text">
-                          <input type="number" class="w-65" placeholder="70">
-                      </label>
-                    </label>
-                  </form> 
-                  <form class="type__calculation edit__trays">      
-                    <label for="">
-                        <div class="form__divText">
-                            Тип 1 прикромочный, мм:
+                            Сечение:
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -172,7 +160,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Тип 2 стандартный, мм:    
+                            Высота минимальная:
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -182,7 +170,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Тип 2 прикромочный, мм:     
+                            Высота максимальная: 
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -192,7 +180,17 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Тип 4, мм:    
+                            Высота решетки:
+                        </div>   
+                        <label for="form__text">
+                          <input type="number" class="w-65" placeholder="70">
+                      </label>
+                    </label>
+                  </form> 
+                  <form class="type__calculation edit__trays">      
+                    <label for="">
+                        <div class="form__divText">
+                            Угол: 
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -210,14 +208,33 @@
                     </label>
                   </form> 
             </div>
-            <div class="main__block-text">
-                <div class="main__block-text--name">Активен:
-                    <label class="main__block-check check option">
-                        <input class="check__input" type="checkbox" checked="">
-                        <span class="check__box"></span>  
-                    </label> 
-                </div>
-            </div>
+            <form class="type__calculation edit__lines">      
+                <label for="">
+                    <div class="form__divText">
+                        Группа:   
+                    </div>   
+                    <select name="type__calculation" class="type__calculation">
+                        <option>Евро</option>
+                        <option value="[Не выбрано]">1кв</option> 
+                        <option value="[Не выбрано]">10кв</option> 
+                        <option value="[Не выбрано]">100кв</option> 
+                    </select>
+                </label>
+                <div class="select-arrow"></div> 
+              </form> 
+              <form class="type__calculation edit__trays">      
+                <label for="">
+                    <div class="form__divText">
+                        Угол: 
+                    </div>   
+                    <label for="form__text">
+                      <input type="number" class="w-65" placeholder="70">
+                  </label>
+                </label>
+              </form> 
+              <em>        
+                ....ДО ДЕЛАТЬ такое же есть на стр edit.html и Steelmax-list-2.html
+           </em>  
             <div class="main__block-buttons">
                 <button type="button" class="btn download__btn">Сохранить</button>
                 <button type="button" class="btn delete__btn">Назад</button>
