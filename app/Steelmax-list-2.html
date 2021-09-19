@@ -197,17 +197,7 @@
                       </label>
                     </label>
                   </form> 
-                  <form class="type__calculation edit__trays">      
-                    <label for="">
-                        <div class="form__divText">
-                            Максимальная высота, мм:  
-                        </div>   
-                        <label for="form__text">
-                          <input type="number" class="w-65" placeholder="0.7">
-                      </label>
-                    </label>
-                  </form> 
-            </div>
+            
             <form class="type__calculation edit__lines">      
                 <label for="">
                     <div class="form__divText">
@@ -225,16 +215,41 @@
               <form class="type__calculation edit__trays">      
                 <label for="">
                     <div class="form__divText">
-                        Угол: 
+                        Позиция: 
                     </div>   
                     <label for="form__text">
                       <input type="number" class="w-65" placeholder="70">
                   </label>
                 </label>
               </form> 
-              <em>        
-                ....ДО ДЕЛАТЬ такое же есть на стр edit.html и Steelmax-list-2.html
-           </em>  
+              <form class="type__calculation edit__lines">      
+                <label for="">
+                    <div class="form__divText">
+                        Рисунок: 
+                    </div>   
+                    <select name="type__calculation" class="type__calculation">
+                        <option>Основной лоток</option>
+                        <option value="[Не выбрано]">1кв</option> 
+                        <option value="[Не выбрано]">10кв</option> 
+                        <option value="[Не выбрано]">100кв</option> 
+                    </select>
+                </label>
+                <div class="select-arrow"></div> 
+              </form> 
+              <form class="type__calculation load__pics-block">      
+                <label for="">
+                    <div class="form__divText">
+                        Загрузить новый рисунок: 
+                    </div>   
+                    <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                <label for="input__file" class="input__file-button">
+                   <span class="input__file-button-text">Выберите файл</span>
+                </label>
+                </label>
+                <!-- <img src="./img/Steelmax-list/steel.png" alt="steel">  -->
+              </form>       
+        </div>  
+              
             <div class="main__block-buttons">
                 <button type="button" class="btn download__btn">Сохранить</button>
                 <button type="button" class="btn delete__btn">Назад</button>
