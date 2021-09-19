@@ -1197,23 +1197,27 @@ select::-ms-expand {
   outline: none;
 }
 
-.edit-the-status__form {
+.edit-the-status__form,
+.comments__calc__form {
   padding-top: 46px;
   color: #3C3C3B;
 }
 
-.edit-the-status__box {
+.edit-the-status__box,
+.comments__calc__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
 
-.edit-the-status__box .textarea {
+.edit-the-status__box .textarea,
+.comments__calc__box .textarea {
   margin-left: 38px;
 }
 
-.edit-the-status__text {
+.edit-the-status__text,
+.comments__calc__text {
   margin-top: 0;
 }
 
@@ -1230,6 +1234,15 @@ select::-ms-expand {
 .edit-the-status__btn:hover {
   background-color: #006843;
   color: #fff;
+}
+
+.comments__calc__text {
+  width: 200px;
+}
+
+.comments__calc__textarea {
+  width: 500px;
+  height: 116px;
 }
 
 .tech-decisions__button-box {

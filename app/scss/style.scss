@@ -958,19 +958,22 @@ display: flex;
     padding-left: $padding__left-11px;
     outline: none;
 }
-// редактировать статус 
-.edit-the-status__form{
+// редактировать статус и комментарии к расчетам
+.edit-the-status__form,
+.comments__calc__form{
 padding-top: 46px;
 color: $gray;
 }
-.edit-the-status__box{
+.edit-the-status__box,
+.comments__calc__box{
     display: flex;
     margin-bottom: 30px; 
     .textarea{
         margin-left: 38px;
     }
 }
-.edit-the-status__text{
+.edit-the-status__text,
+.comments__calc__text{
     margin-top: 0;
 }
 .edit-the-status__btn{
@@ -983,6 +986,15 @@ color: $gray;
         background-color: $green;
         color: #fff;
     }
+}
+
+.comments__calc__text {
+    width: 200px;
+}
+
+.comments__calc__textarea {
+    width: 500px;
+    height: 116px;
 }
 // фильтры техническое решения 
 
