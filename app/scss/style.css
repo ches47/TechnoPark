@@ -1064,6 +1064,12 @@ select::-ms-expand {
   text-decoration: underline;
 }
 
+.main__block-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .main__block-lists,
 .list__customer {
   display: -webkit-box;
@@ -1870,5 +1876,9 @@ button.admin__button {
 .admin__buttons button {
   margin-bottom: 30px;
   margin-left: 20px;
+}
+
+.steelmax-list__buttons {
+  margin-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */

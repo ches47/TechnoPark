@@ -846,6 +846,10 @@ select {
     }
 }
 
+.main__block-lists {
+    display: flex;
+}
+
 //Мои расчеты
 .main__block-lists,
 .list__customer {
@@ -1530,4 +1534,8 @@ button.admin__button {
         margin-bottom: 30px;
         margin-left: 20px;
     }
+}
+
+.steelmax-list__buttons {
+    margin-left: 40px;
 }

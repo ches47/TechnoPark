@@ -124,18 +124,24 @@
           <div class="main__block">
             <div class="main__block-lists">
                 <div class="title__on-page">РЕДАКТИРОВАТЬ</div>
+                <div class="steelmax-list__buttons">
+                    <button type="button" class="steelmax-btn">
+                        <img src="./img/Steelmax-list/plus.svg" alt="plus">
+                    </button>
+                    <button type="button" class="steelmax-btn">
+                        <img src="./img/Steelmax-list/save.svg" alt="plus">
+                    </button>
+                </div>
             </div>  
 
-
-            ....ДО ДЕЛАТЬ
             <div class="main__block-settlements">
                 <form class="type__calculation edit__lines">      
                     <label for="">
                         <div class="form__divText">
-                            Тип зделия:     
+                            Серия:     
                         </div>   
                         <select name="type__calculation" class="type__calculation">
-                            <option>Основной лоток</option>
+                            <option>Basic</option>
                             <option value="[Не выбрано]">1кв</option> 
                             <option value="[Не выбрано]">10кв</option> 
                             <option value="[Не выбрано]">100кв</option> 
@@ -144,22 +150,20 @@
                     <div class="select-arrow"></div> 
                   </form> 
 
-                  <form class="type__calculation edit__calculation">      
-                    <label for="">
-                        <div class="form__divText">
-                            Наименование:     
-                        </div>   
-                        <select name="type__calculation" class="edit__calculation">
-                            <option>Лоток водоотводный S'park ЛВ-07.09.09-ПП пластиковый</option>
-                        </select>
-                    </label>
-              
-                  </form> 
-
                 <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Артикул:     
+                            Сечение, мм:    
+                        </div>   
+                        <label for="form__text">
+                          <input type="number" class="w-65" placeholder="">
+                      </label>
+                    </label>
+                  </form> 
+                  <form class="type__calculation edit__trays">      
+                    <label for="">
+                        <div class="form__divText">
+                            Тип 1 стандартный, мм:
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -169,7 +173,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Гидравлическое сечение, мм: 
+                            Тип 1 прикромочный, мм:
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -179,7 +183,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Гидравлическая высота, мм:   
+                            Тип 2 стандартный, мм:    
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -189,7 +193,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Полная ширина, мм:     
+                            Тип 2 прикромочный, мм:     
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -199,7 +203,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Полная высота, мм:     
+                            Тип 4, мм:    
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="70">
@@ -209,27 +213,7 @@
                   <form class="type__calculation edit__trays">      
                     <label for="">
                         <div class="form__divText">
-                            Длина, мм:     
-                        </div>   
-                        <label for="form__text">
-                          <input type="number" class="w-65" placeholder="70">
-                      </label>
-                    </label>
-                  </form> 
-                  <form class="type__calculation edit__trays">      
-                    <label for="">
-                        <div class="form__divText">
-                            Радиус, мм:     
-                        </div>   
-                        <label for="form__text">
-                          <input type="number" class="w-65" placeholder="70">
-                      </label>
-                    </label>
-                  </form> 
-                  <form class="type__calculation edit__trays">      
-                    <label for="">
-                        <div class="form__divText">
-                            Максимальная степень наполнения:   
+                            Максимальная высота, мм:  
                         </div>   
                         <label for="form__text">
                           <input type="number" class="w-65" placeholder="0.7">
@@ -237,71 +221,14 @@
                     </label>
                   </form> 
             </div>
-
             <div class="main__block-text">
-                <div class="main__block-text--name">Бетонная обойма под примыкающее покрытие:
+                <div class="main__block-text--name">Активен:
                     <label class="main__block-check check option">
                         <input class="check__input" type="checkbox" checked="">
                         <span class="check__box"></span>  
                     </label> 
                 </div>
             </div>
-            <div class="main__block-text">
-                <div class="main__block-text--name">Бетонная обойма до верха:
-                    <label class="main__block-check check option">
-                        <input class="check__input" type="checkbox" checked="">
-                        <span class="check__box"></span>  
-                    </label> 
-                </div>
-            </div>
-            <div class="main__block-text">
-                <div class="main__block-text--name">Бетонная обойма до верха:
-                    <label class="main__block-check check option">
-                        <input class="check__input" type="checkbox" checked="">
-                        <span class="check__box"></span>  
-                    </label> 
-                </div>
-            </div>
-            <div class="main__block-text">
-                <div class="main__block-text--name">Установка в кювете:
-                    <label class="main__block-check check option">
-                        <input class="check__input" type="checkbox" checked="">
-                        <span class="check__box"></span>  
-                    </label> 
-                </div>
-            </div>
-            <div class="main__block-text">
-                <div class="main__block-text--name">Установка в межэтажное перекрытие:
-                    <label class="main__block-check check option">
-                        <input class="check__input" type="checkbox" checked="">
-                        <span class="check__box"></span>  
-                    </label> 
-                </div>
-            </div>
-            <div class="main__block-text">
-                <div class="main__block-text--name">Установка в кровельное покрытие:
-                    <label class="main__block-check check option">
-                        <input class="check__input" type="checkbox" checked="">
-                        <span class="check__box"></span>  
-                    </label> 
-                </div>
-            </div>
-            <form class="type__calculation edit__lines">      
-                <label for="">
-                    <div class="form__divText">
-                        Рисунок:     
-                    </div>   
-                    <select name="type__calculation" class="type__calculation">
-                        <option>Основной лоток</option>
-                        <option value="[Не выбрано]">1кв</option> 
-                        <option value="[Не выбрано]">10кв</option> 
-                        <option value="[Не выбрано]">100кв</option> 
-                    </select>
-                </label>
-              </form> 
-
-              ....ДО ДЕЛАТЬ
-
             <div class="main__block-buttons">
                 <button type="button" class="btn download__btn">Сохранить</button>
                 <button type="button" class="btn delete__btn">Назад</button>
