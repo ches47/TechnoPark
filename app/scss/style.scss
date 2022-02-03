@@ -178,6 +178,63 @@ select {
         right: 121px;
     }
 }
+
+.edit__lines {
+    padding-bottom: 0px;
+    width: 470px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/РМ00002516__page/greenStar.svg') no-repeat right center;
+        position: absolute;
+        top: 44px;
+        right: 85px;
+        width: 11px;
+        height: 11px;
+    }
+    .select-arrow {
+        position: absolute;
+        top: 58px;
+        right: 121px;
+    }
+}
+.edit__calculation {
+    width: 489px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/РМ00002516__page/greenStar.svg') no-repeat right center;
+        position: absolute;
+        top: 44px;
+        right: -21px;
+        width: 11px;
+        height: 11px;
+    }
+    .select-arrow {
+        position: absolute;
+        top: 58px;
+        right: 121px;
+    }
+}
+
+.edit__trays {
+    padding-bottom: 0px;
+    width: 300px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        background: url('../img/РМ00002516__page/greenStar.svg') no-repeat right center;
+        position: absolute;
+        top: 44px;
+        right: 215px;
+        width: 11px;
+        height: 11px;
+    }
+}
+
 .characteristics__trays {
     padding-bottom: 0px;
     width: 300px;
@@ -789,6 +846,10 @@ select {
     }
 }
 
+.main__block-lists {
+    display: flex;
+}
+
 //Мои расчеты
 .main__block-lists,
 .list__customer {
@@ -901,19 +962,22 @@ display: flex;
     padding-left: $padding__left-11px;
     outline: none;
 }
-// редактировать статус 
-.edit-the-status__form{
+// редактировать статус и комментарии к расчетам
+.edit-the-status__form,
+.comments__calc__form{
 padding-top: 46px;
 color: $gray;
 }
-.edit-the-status__box{
+.edit-the-status__box,
+.comments__calc__box{
     display: flex;
     margin-bottom: 30px; 
     .textarea{
         margin-left: 38px;
     }
 }
-.edit-the-status__text{
+.edit-the-status__text,
+.comments__calc__text{
     margin-top: 0;
 }
 .edit-the-status__btn{
@@ -926,6 +990,15 @@ color: $gray;
         background-color: $green;
         color: #fff;
     }
+}
+
+.comments__calc__text {
+    width: 200px;
+} 
+
+.comments__calc__textarea {
+    width: 500px;
+    height: 116px;
 }
 // фильтры техническое решения 
 
@@ -1408,4 +1481,220 @@ color: $gray;
             }
         }
     }
+}
+
+
+.static__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    button.static__button{
+        border-radius: 10px;
+        border: 1px solid $light-gray;
+        width: 300px;
+        height: 109px;
+        text-align: center;
+        color: $green;
+        font-weight: 600;
+        font-size: 18px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(129, 129, 129, 0.2);
+    }
+    :nth-child(1) {
+        margin-right: 20px;
+    }
+}
+
+.admin__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.admin__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+button.admin__button {
+    border-radius: 10px;
+    border: 1px solid $light-gray;
+    width: 300px;
+    height: 109px;
+    text-align: center;
+    color: $green;
+    font-weight: 600;
+    font-size: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(129, 129, 129, 0.2);
+}
+.admin__buttons {
+    button {
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+}
+
+.steelmax-list__buttons {
+    margin-left: 40px;
+}
+
+.load__pics-block {
+    margin: 20px 0;
+}
+
+//Выберите файл КНОПКА
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+  }
+   
+  .input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+   
+  .input__file-icon-wrapper {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-right: 1px solid #fff;
+  }
+   
+  .input__file-button-text {
+    line-height: 1;
+    margin-top: 1px;
+  }
+   
+  .input__file-button {
+    width: 100%;
+    max-width: 153px;
+    height: 32px;
+    background: $green;
+    padding-left: 26px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+//Calendar -- Engineering-reports page
+table {
+	border-collapse: separate;
+	margin: 10px 0;
+	font-size: 32px;
+    font-weight: 600;
+}
+
+.table__weekend {
+    background-color: $light-red;
+    width: 130px;
+    height: 77px;
+    border-radius: 10px;
+    padding-left: 55px;
+}
+.table__weekend-span {
+    font-weight: 300;
+    font-size: 11px;
+    text-align: left;
+}
+.table__working {
+    background-color: $light-blue;
+    width: 130px;
+    height: 77px;
+    border-radius: 10px;
+    padding-left: 55px;
+}
+
+td, th {
+	width: 81px;
+	height: 81px;
+	text-align: center;
+	vertical-align: right;
+	color: #444;
+	position: relative;
+}
+th {
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+}
+td:hover, th:hover {
+	background-position: 0px -81px;
+	color: #222;
+}
+td.date_has_event {
+	background-position: 162px 0px;
+	color: white;
+}
+td.date_has_event:hover {
+	background-position: 162px -81px;
+}
+td.padding {
+	background: url(../img/calpad.jpg);
+}
+td.today {
+	background-position: 81px 0px;
+	color: white;
+}
+td.today:hover {
+	background-position: 81px -81px;
+}
+.events {
+	position: relative;
+}
+.events ul {
+	text-align: left;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	padding: 15px;
+	background: #E7ECF2 url(../img/popup.png) no-repeat;
+	color: white;
+	border: 1px solid white;
+	font-size: 15px;
+	width: 200px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-border-radius: 3px;
+	list-style: none;
+	color: #444444;
+	-webkit-box-shadow: 0px 8px 8px #333;
+}
+.events li {
+	padding-bottom: 5px;
+}
+.events li span {
+	display: block;
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+.events li span.title {
+	font-weight: bold;
+	color: #222;
 }
